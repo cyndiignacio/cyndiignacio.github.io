@@ -2155,7 +2155,7 @@ input, select, textarea {
 			.image.fit .overlay .text {
 				color: #062553;
 				font-weight: bold;
-				font-size: 20px;
+				font-size: 2vw;
 				position: absolute;
 				top: 50%;
 				left: 50%;
@@ -3765,8 +3765,8 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 3em 5em 3em ;
-				height: auto;
-				min-height: 0;
+				/* height: auto; */
+				/* min-height: 0; */
 			}
 
 				#banner h2 {
@@ -4064,5 +4064,5 @@ input, select, textarea {
 	}
 
 	body.is-mobile.landing #footer {
-		background-color: #1d242a;
+		background-color: #062553b6;
 	}
