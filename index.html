@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="./libs/v6.1.1-dist/ol.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="landing is-preload">
@@ -22,6 +23,7 @@
 										<ul>
 											<li><a href="index.html">Home</a></li>
 											<li><a href="#two">Work</a></li>
+											<li><a href="#map-loc">Location of Projects</a></li>
 											<li><a href="#four">Current Stack</a></li>
 											<li><a href="#one">About</a></li>
 											<li><a href="#footer">Contact</a></li>
@@ -52,15 +54,13 @@
 								</p>
 							</header>
 							<ul class="icons major">
-								<li><a href="#two" class="icon far fa-map major style1"><span class="label">Work</span></a></li>
+								<li><a href="#two" class="icon fas fa-tasks major style1"><span class="label">Work</span></a></li>
 								<li><a href="https://www.linkedin.com/in/cyndiignacio/" class="icon brands fab fa-linkedin-in major style2"><span class="label">Linkedin</span></a></li>
 								<li><a href="https://github.com/cyndiignacio?tab=repositories" class="icon brands fa-git major style3"><span class="label">Git</span></a></li>
-								<li><a href="#four" class="icon fas fa-stream major style1"><span class="label">Current Stack</span></a></li>
+								<li><a href="#map-loc" class="icon fas fa-map-marker-alt major style1"><span class="label">Location of Projects</span></a></li>
+								<li><a href="#four" class="icon fas fa-laptop-code major style1"><span class="label">Current Stack</span></a></li>
 								<li><a href="mailto:cyndi.ignacio@gmail.com" class="icon fas fa-envelope major style3"><span class="label">About</span></a></li>
-				
-								<!-- <li><span class="icon brands fa-linkedin major style2"><span class="label">Linkedin</span></span></li>
-								<li><span class="icon far fa-map major style3"><span class="label">Projects</span></span></li>
-								<li><span class="icon fas fa-envelope major style3"><span class="label">Contact</span></span></li> -->
+			
 							</ul>
 						</div>
 					</section>
@@ -81,7 +81,7 @@
 								<h2>ArcGIS Toolbox for  tide correction of In Situ AND SATELLITE-DERIVED SHORELINES<br />
 								</h2>
 								<p>Extracts shorelines from Landsat ETM+ images and adjusts both the in-situ-based and landsat-derived shorelines to mean sea level (MSL). <br>
-									<a href=https://github.com/cyndiignacio?tab=repositories> View Code </a>
+									<a href=https://github.com/cyndiignacio/tidecorrectiontoolbox> View Code </a>
 								</p>
 								
 							</div>
@@ -106,6 +106,21 @@
 								</p>
 							</div>
 						</section>
+					</section>
+
+				<!-- Map -->
+					<section id="map-loc" class="wrapper style8 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Location of Projects</h2>
+							</header>
+							<div id='js-map' class='map'>
+									<div id="popup" class="ol-popup">
+										<a href="#" id="popup-closer" class="ol-popup-closer"></a>
+										<div id="popup-content"></div>
+									</div>
+								</div>
+						</div>
 					</section>
 
 				<!-- Three -->
@@ -221,46 +236,45 @@
 					</section>
 
 				<!-- Four -->
-				<section id="four" class="wrapper style4 special">
-					<div class="inner">
-						<header class="major">
-							<h2>Current Stack</h2>
-						</header>
-						<ul class="icons major2">
-							<li><img src=/images/logos/esri2.png alt="ESRI" width="80" height="80"></li>
-							<li><img src=/images/logos/qgis.png alt="QGIS" width="80" height="80"></li>
-							<li><img src=/images/logos/grass.png alt="GRASS" width="80" height="80"></li>
-							<li><img src=/images/logos/manifold.png alt="Manifold" width="80" height="80"></li>
-							<li><img src=/images/logos/globalmapper.png alt="Global Mapper" width="80" height="80"></li>
-							<li><img src=/images/logos/envi.png alt="ENVI" width="80" height="80"></li>
-							<li><img src=/images/logos/googleearth.png alt="Google Earth" width="80" height="80"></li>
-							<li><img src=/images/logos/ai.png alt="Adobe Illustrator" width="80" height="80"></li>
-							<li><img src=/images/logos/python.png alt="Python" width="80" height="80"></li>
-							<li><img src=/images/logos/postgis.png alt="PostGIS" width="80" height="80"></li>
-							<li><img src=/images/logos/json.png alt="JSON" width="80" height="80"></li>
-							<li><img src=/images/logos/mongodb.png alt="MongoDB" width="80" height="80"></li>
-							<li><img src=/images/logos/js.png alt="Javascript" width="80" height="80"></li>
-							<li><img src=/images/logos/html.png alt="HTML" width="80" height="80"></li>
-							<li><img src=/images/logos/css.png alt="CSS" width="80" height="80"></li>
-							<li><img src=/images/logos/react.png alt="ReactJS" width="80" height="80"></li>
-							<li><img src=/images/logos/nodejs.png alt="NodeJS" width="80" height="80"></li>
-							<li><img src=/images/logos/docker.png alt="Docker" width="80" height="80"></li>
-						</ul>	
-					</div>
-				</section>
+					<section id="four" class="wrapper style4 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Current Stack</h2>
+							</header>
+							<ul class="icons major2">
+								<li><img src=/images/logos/esri2.png alt="ESRI" width="80" height="80"></li>
+								<li><img src=/images/logos/qgis.png alt="QGIS" width="80" height="80"></li>
+								<li><img src=/images/logos/grass.png alt="GRASS" width="80" height="80"></li>
+								<li><img src=/images/logos/manifold.png alt="Manifold" width="80" height="80"></li>
+								<li><img src=/images/logos/globalmapper.png alt="Global Mapper" width="80" height="80"></li>
+								<li><img src=/images/logos/envi.png alt="ENVI" width="80" height="80"></li>
+								<li><img src=/images/logos/googleearth.png alt="Google Earth" width="80" height="80"></li>
+								<li><img src=/images/logos/ai.png alt="Adobe Illustrator" width="80" height="80"></li>
+								<li><img src=/images/logos/python.png alt="Python" width="80" height="80"></li>
+								<li><img src=/images/logos/postgis.png alt="PostGIS" width="80" height="80"></li>
+								<li><img src=/images/logos/json.png alt="JSON" width="80" height="80"></li>
+								<li><img src=/images/logos/mongodb.png alt="MongoDB" width="80" height="80"></li>
+								<li><img src=/images/logos/js.png alt="Javascript" width="80" height="80"></li>
+								<li><img src=/images/logos/html.png alt="HTML" width="80" height="80"></li>
+								<li><img src=/images/logos/css.png alt="CSS" width="80" height="80"></li>
+								<li><img src=/images/logos/react.png alt="ReactJS" width="80" height="80"></li>
+								<li><img src=/images/logos/nodejs.png alt="NodeJS" width="80" height="80"></li>
+								<li><img src=/images/logos/docker.png alt="Docker" width="80" height="80"></li>
+							</ul>	
+						</div>
+					</section>
 
 				<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-git-square"><span class="label">Git</span></a></li>
-						<li><a href="https://www.linkedin.com/in/cyndiignacio/" class="icon brands fab fa-linkedin-in"><span class="label">Facebook</span></a></li>
-						<li><a href="mailto:cyndi.ignacio@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Cyndi Ignacio</li><li>2019</a></li>
-					</ul>
-				</footer>
-
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-git-square"><span class="label">Git</span></a></li>
+							<li><a href="https://www.linkedin.com/in/cyndiignacio/" class="icon brands fab fa-linkedin-in"><span class="label">Facebook</span></a></li>
+							<li><a href="mailto:cyndi.ignacio@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Cyndi Ignacio</li><li>2020</a></li>
+						</ul>
+					</footer>
 			</div>
 
 		<!-- Scripts -->
@@ -271,6 +285,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src='assets/js/index.js'></script>
+			<script src='libs/v6.1.1-dist/ol.js'></script>
 
 	</body>
 </html>
