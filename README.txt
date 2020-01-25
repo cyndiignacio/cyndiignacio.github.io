@@ -9,6 +9,9 @@ Credits:
 
 	Icons:
 		Font Awesome (fontawesome.io)
+		
+	Map:
+		OpenLayers
 
 	Other:
 		jQuery (jquery.com)
