@@ -4,15 +4,12 @@
 		<title>Cyndi Ignacio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<script type="text/javascript">
-			bg = new Image();
-			bg.src="images/banner.jpg";
-		</script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="./libs/v6.1.1-dist/ol.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="landing is-preload">
+			<div id="load"></div>
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
@@ -25,7 +22,7 @@
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Home</a></li>
+											<li><a href="#banner">Home</a></li>
 											<li><a href="#two">Work</a></li>
 											<li><a href="#map-loc">Location of Projects</a></li>
 											<li><a href="#four">Current Stack</a></li>
@@ -40,7 +37,7 @@
 
 				<!-- Banner -->
 					<section id="banner">
-						<div class="inner2">
+						<div class="inner">
 							<h2>Cyndi Ignacio</h2>
 							<p>GIS PORTFOLIO</p>
 						</div>
@@ -113,7 +110,7 @@
 					</section>
 
 				<!-- Map -->
-<!-- 					<section id="map-loc" class="wrapper style8 special">
+					<section id="map-loc" class="wrapper style8 special">
 						<div class="inner">
 							<header class="major">
 								<h2>Location of Projects</h2>
@@ -125,7 +122,7 @@
 									</div>
 								</div>
 						</div>
-					</section> -->
+					</section>
 
 				<!-- Three -->
 					<section id="three" class="wrapper style6 special">
@@ -282,6 +279,8 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src='assets/js/index.js'></script>
+			<script src='libs/v6.1.1-dist/ol.js'></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -289,8 +288,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src='assets/js/index.js'></script>
-			<script src='libs/v6.1.1-dist/ol.js'></script>
-
+			<script src="assets/js/loader.js"></script>
 	</body>
 </html>
