@@ -7,6 +7,15 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+#load{
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index:9999;
+    background:url("../../images/loader.gif") no-repeat center 20% rgba(0,0,0,0.25);
+	background-color: #c1f6fa;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3870,8 +3879,6 @@ input, select, textarea {
 	}
 
 /* CTA */
-	#cta .inner2
-
 	#cta .inner {
 		display: -moz-flex;
 		display: -webkit-flex;
